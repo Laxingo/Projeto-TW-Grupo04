@@ -150,3 +150,41 @@ img {vertical-align: middle;}
   .prev, .next,.text {font-size: 11px}
 } 
 /* Fim Slide Show */
+
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 10px;
+}
+
+.image-grid img {
+  width: 100%;
+  height: auto;
+}
+
+.popup {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 800px;
+  height: 600px;
+  background-color: white;
+  border: 1px solid black;
+  padding: 20px;
+}
+
+/* Show the popup when the image is clicked */
+.popup:target {
+  display: block;
+}
+
+.close-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: red;
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}

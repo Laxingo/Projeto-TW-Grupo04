@@ -39,3 +39,8 @@ function showSlides(n) {
     dots[slideIndex-1].className += " active";
 }
 //Fim SlideShow
+
+function closePopup() {
+  // Remove the #id from the URL
+  window.location.hash = '';
+}
