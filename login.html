@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="icon" type="image/x-icon" href="Images/Icon.png">
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+<div id="barraPrincipal">
+  <a class="active" href="#home">Home</a>
+  <a href="#about">About</a>
+  <a href="#contact">Contact</a>
+  <div class="search-container">
+    <form action="/action_page.php">
+      <input type="text" placeholder="Search.." name="search">
+      <button type="submit"><i class="fa fa-search"></i></button>
+    </form>
+  </div>
+</div>
+<!-- Falta a imagem do search. -->
+<br></br>
+<br></br>
+<form action="action_page.php" method="post">
+  <div class="login">
+    <label for="uname"><b>Utilizador</b></label><br>
+    <input type="text" placeholder="Utilizador" name="uname" required><br>
+
+    <label for="psw"><b>Palavra-Passe</b></label><br>
+    <input type="password" placeholder="Palavra-Passe" name="psw" required><br>
+    <label>
+      <input type="checkbox" checked="checked" name="remember"> Remember me
+    </label>
+    <a href="#">Criar conta</a></span>
+  </div>
+  <div class="login button">
+    <button type="submit">Login</button>
+  </div>
+</form>
+</html>
