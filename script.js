@@ -80,3 +80,41 @@ function addToCart(item){
   
 
 }
+//funcionalidades carrinho de compras 
+function addItem(item) {
+  let cart = JSON.parse(localStorage.getItem("cart")) || [];
+  let existingItem = cart.find(i => i.id === item.id);
+  if (existingItem) {
+    existingItem.quantity += item.quantity;
+  } else {
+    cart.push(item);
+  }
+  localStorage.setItem("cart", JSON.stringify(cart));
+  updateCart();
+}
+function removeItem(itemId) {
+  let cart = JSON.parse(localStorage.getItem("cart")) || [];
+  cart = cart.filter(item => item.id !== itemId);
+  localStorage.setItem("cart", JSON.stringify(cart));
+  updateCart();
+}
+function updateQuantity(itemId, newQuantity) {
+  let cart = JSON.parse(localStorage.getItem("cart")) || [];
+  let item = cart.find(i => i.id === itemId);
+  if(item){
+      item.quantity = newQuantity;
+  }
+  localStorage.setItem("cart", JSON.stringify(cart));
+  updateCart();
+}
+function updateCart(){
+  let cart = JSON.parse(localStorage.getItem("cart")) || [];
+  let cartList = document.getElementById("cart-list");
+  let totalPrice = 0;
+  cartList.innerHTML = '';
+  for(let i = 0; i < cart.length; i++){
+    let item = cart[i];
+    totalPrice += item.price * item.quantity;
+    cartList.inner
+  }
+}
