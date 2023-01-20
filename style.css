@@ -65,77 +65,7 @@
         background-color: rgb(93, 87, 84);
     }
     
-    /* Barra Principal */
-    #barraPrincipal {
-        background-color: rgb(255, 255, 255);
-        position: fixed;
-        top: 0;
-        width: 100%;
-        display: block;
-        transition: top 0.3s;
-    }
-    #barraPrincipal a {
-        float: left;
-        display: block;
-        color: black;
-        text-align: center;
-        padding: 14px 16px;
-        text-decoration: none;
-        font-size: 17px;
-    }
-    
-    #barraPrincipal a:hover {
-        background-color: #ddd;
-        color: black;
-    }
-    
-    #barraPrincipal a.active {
-        background-color: #2196F3;
-        color: white;
-    }
-    #barraPrincipal .countdown1{
-        float: right;
-        font-size:25px;
-        color: red;
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        text-align: center;
-    }
-    
-      #barraPrincipal .countdown{
-        float: right;
-        font-size:25px;
-        color: red;
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        text-align: center;
-    }
-
-    #barraPrincipal .search-container {
-        float: right;
-    }
-    
-  
-    #barraPrincipal input[type=text] {
-        padding: 6px;
-        margin-top: 8px;
-        font-size: 17px;
-        border: none;
-    }
-    
-    #barraPrincipal .search-container button {
-        float: right;
-        padding: 6px 10px;
-        margin-top: 8px;
-        margin-right: 16px;
-        background: #ddd;
-        font-size: 17px;
-        border: none;
-        cursor: pointer;
-    }
-    
-    #barraPrincipal .search-container button:hover {
-        background: #ccc;
-    }
-    /* Fim Barra Principal */
+ 
     
     /* Slide Show */
     .mySlides {display: none}
@@ -143,9 +73,9 @@
     
     /* Slideshow container */
     .slideshow-container {
-        width:auto;
+        width: auto;
         position: relative;
-        /*margin: auto;*/
+        margin: auto;
     }
     
     /* Next & previous buttons */
@@ -227,6 +157,79 @@
         .prev, .next,.text {font-size: 11px}
     } 
     /* Fim Slide Show */
+
+
+       /* Barra Principal */
+       #barraPrincipal {
+        background-color: rgb(255, 255, 255);
+        position: fixed;
+        top: 0;
+        width: 100%;
+        display: block;
+        transition: top 0.3s;
+    }
+    #barraPrincipal a {
+        float: left;
+        display: block;
+        color: black;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+    }
+    
+    #barraPrincipal a:hover {
+        background-color: #ddd;
+        color: black;
+    }
+    
+    #barraPrincipal a.active {
+        background-color: #2196F3;
+        color: white;
+    }
+    #barraPrincipal .countdown1{
+        float: right;
+        font-size:25px;
+        color: red;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        text-align: center;
+    }
+    
+      #barraPrincipal .countdown{
+        float: right;
+        font-size:25px;
+        color: red;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        text-align: center;
+    }
+
+    #barraPrincipal .search-container {
+        float: right;
+    }
+    
+  
+    #barraPrincipal input[type=text] {
+        padding: 6px;
+        margin-top: 8px;
+        font-size: 17px;
+        border: none;
+    }
+    
+    #barraPrincipal .search-container button {
+        float: right;
+        padding: 6px 10px;
+        margin-top: 8px;
+        margin-right: 16px;
+        background: #ddd;
+        font-size: 17px;
+        border: none;
+        cursor: pointer;
+    }
+    
+    #barraPrincipal .search-container button:hover {
+        background: #ccc;
+    }
+    /* Fim Barra Principal */
     
     .image-grid {
         display:grid;
@@ -248,8 +251,8 @@
         transform: translate(-50%, -50%);
         width: 800px;
         height: 600px;
-        background-color: white;
-        border: 1px solid black;
+        background-color: rgba(179, 179, 179, 0.878);
+        border: 2px solid rgba(0, 0, 0, 0.878);
         padding: 20px;
     }
     
@@ -257,6 +260,8 @@
     .popup:target {
         display: block;
     }
+
+
     
     .close-button {
         display: inline-block;
@@ -406,9 +411,9 @@
         width: 100%;
       }
       footer {
-        position: fixed;
+        position: absolute;
         left: 0;
-        bottom: 0;
+        bottom: bottom;
         width: 100%;
         background-color: #333333;
         color: white;

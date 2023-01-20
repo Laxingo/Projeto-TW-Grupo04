@@ -61,3 +61,15 @@ setInterval(function() {
   document.getElementById("countdown1").innerHTML ="Winter Sales ends in:";
   document.getElementById("countdown").innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds + "s";
 }, 1000);
+
+function addToCart(item){
+  var itemToAdd
+  window.location="pagina de peça.html"
+  if(item == 1)  {
+    document.getElementById("product-img").innerHTML = '<img src="tw roupa/cool_h_b.jpeg"';
+    
+  }  
+
+  
+
+}
