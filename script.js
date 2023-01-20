@@ -66,9 +66,16 @@ function addToCart(item){
   var itemToAdd
   window.location="pagina de peça.html"
   if(item == 1)  {
-    document.getElementById("product-img").innerHTML = '<img src="tw roupa/cool_h_b.jpeg"';
-    
-  }  
+    document.getElementsByClassName("product-img").innerHTML = '<img src="tw roupa/cool_h_b.jpeg"';
+  }else if(item == 2) {
+    document.getElementsByClassName("product-img").innerHTML = '<img src="tw roupa/flor_h_b.jpeg"';
+  }else if(item == 3) {
+    document.getElementsByClassName("product-img").innerHTML = '<img src="tw roupa/tsiw_h_b.jpeg"';
+  }else if(item == 4) {
+    document.getElementsByClassName("product-img").innerHTML = '<img src="tw roupa/ghost_h_b.jpeg"';
+  }else if(item == 5) {
+    document.getElementsByClassName("product-img").innerHTML = '<img src="tw roupa/sol_h_b.jpeg"';
+  }
 
   
 
