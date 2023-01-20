@@ -44,3 +44,20 @@ function closePopup() {
   // Remove the #id from the URL
   window.location.hash = '';
 }
+
+
+//COUNTDOWN
+var endDate = new Date("January 30, 2023 00:00:00");
+var currentDate = new Date();
+var remainingTime = endDate - currentDate;
+
+setInterval(function() {
+  currentDate = new Date();
+  remainingTime = endDate - currentDate;
+  var days = Math.floor(remainingTime / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((remainingTime % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((remainingTime % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((remainingTime % (1000 * 60)) / 1000);
+  document.getElementById("countdown1").innerHTML ="Winter Sales ends in:";
+  document.getElementById("countdown").innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds + "s";
+}, 1000);
