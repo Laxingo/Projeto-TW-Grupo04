@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html>
 <head>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css%22%3E">
 <link rel="icon" type="image/x-icon" href="Images/Icon.png">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <div id="barraPrincipal">
-  <a class="active" href="#home">Home</a>
-  <a href="login.html">Login</a>
+  <a  href="index.html">Home</a>
+  <a class="active" href="login.html">Login</a>
   <a href="pagina de peça.html">Cart</a>
 
   <div class="search-container">
-    <form action="login.html">
+    <form>
       <input type="text" placeholder="Search.." name="search">
       <button type="submit"><i class="fa fa-search"></i></button>
     </form>
@@ -20,17 +20,19 @@
 
   <div class="countdown" id="countdown"></div>
   <div class="countdown1" id="countdown1"></div>
-</div>  
+</div>
 
 <br></br>
 <br></br>
-<form action="action_page.php" method="post">
+<form action="index.html">
   <div class="login">
     <label for="uname"><b>Utilizador</b></label><br>
-    <input type="text" placeholder="Utilizador" name="cruname" required><br>
+    <input type="text" placeholder="Utilizador" name="crname" id="username" required><br>
+    <label for="uname"><b>Email</b></label><br>
+    <input type="text" placeholder="Email" name="email" id="email"required><br>
 
     <label for="psw"><b>Palavra-Passe</b></label><br>
-    <input type="password" placeholder="Palavra-Passe" name="crpsw" required><br>
+    <input type="password" placeholder="Palavra-Passe" name="crpsw" id="psw"required><br>
   </div>
   <div class="login button">
     <button type="submit" href="login.html">Criar Conta</button>
